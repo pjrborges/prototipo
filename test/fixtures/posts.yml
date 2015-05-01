@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nome: MyString
+  num: MyString
+  progressao: MyString
+  livramento: MyString
+  termino: MyString
+
+two:
+  nome: MyString
+  num: MyString
+  progressao: MyString
+  livramento: MyString
+  termino: MyString

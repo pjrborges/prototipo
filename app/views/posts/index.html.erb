@@ -1,0 +1,31 @@
+<h1>Banco de Dados de Execuções Penais</h1>
+
+<table border=1 style="width:80%">
+  <tr>
+    <th>Nome</th>
+    <th>Num</th>
+    <th>Progressao</th>
+    <th>Livramento</th>
+    <th>Termino</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.nome %></td>
+    <td><%= post.num %></td>
+    <td><%= post.progressao %></td>
+    <td><%= post.livramento %></td>
+    <td><%= post.termino %></td>
+    <td><%= link_to 'Ver', post %></td>
+    <td><%= link_to 'Editar', edit_post_path(post) %></td>
+    <td><%= link_to 'Excluir', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Cadastrar nova execução', new_post_path %>
